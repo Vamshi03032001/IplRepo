@@ -7,6 +7,7 @@ import com.example.entity.Team;
 
 @Repository
 public interface TeamRepository extends JpaRepository<Team,Integer>{
-	
+	 
+	Team findByOwnerName(String ownerName);
 
 }
